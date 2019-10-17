@@ -1,0 +1,42 @@
+package com.company;
+
+public class Student {
+    private String Name, Surname;
+    private int Age;
+
+    public Student (String A, String B, int C){
+        Name = A;
+        Surname = B;
+        Age = C;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getSurname() {
+        return Surname;
+    }
+
+    public void setSurname(String surname) {
+        Surname = surname;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public void setAge(int age) {
+        Age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Name = " + Name + "] Surname = " + Surname + "] Age = "+ Age + "]";
+    }
+}
+
