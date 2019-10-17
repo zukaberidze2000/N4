@@ -1,0 +1,37 @@
+package com.company;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        Student zuka = new Student("Zuka","Beridze",19);
+        Student xatia = new Student("Xatia","gafrindashvili",20);
+        Student gio = new Student("Gio","Miqeladze",25);
+        Student kaxa = new Student("Kaxa","Revazishvili",45);
+
+        ArrayList<Student> N1 = new ArrayList();
+        ArrayList<Student> N2 = new ArrayList();
+        ArrayList<Student> N3 = new ArrayList();
+
+        N1.add(zuka);
+        N1.add(gio);
+        N2.add(xatia);
+        N2.add(kaxa);
+
+        N3.addAll(N1);
+        N3.addAll(N2);
+
+        System.out.println("Student up to 21");
+
+        Studentprint(N3);
+    }
+
+    private static void Studentprint(ArrayList<Student> n3) {
+        for (int i = 0; i < n3.size() ; i++) {
+            if (n3.get(i).getAge() > 22)
+                System.out.println(n3.get(i));
+        }
+    }
+
+}
