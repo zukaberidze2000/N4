@@ -1,33 +1,33 @@
 package com.company;
 
 public class Student {
-    private String Name, Surname;
-    private int Age;
+    private String name, surname;
+    private int age;
 
     public Student (String A, String B, int C){
-        Name = A;
-        Surname = B;
-        Age = C;
+        name = A;
+        surname = B;
+        age = C;
     }
 
-    public String getName() {
+    public String getname() {
         return Name;
     }
 
-    public void setName(String name) {
+    public void setname(String name) {
         Name = name;
     }
 
-    public String getSurname() {
-        return Surname;
+    public String getsurname() {
+        return surname;
     }
 
     public void setSurname(String surname) {
-        Surname = surname;
+        surname = surname;
     }
 
-    public int getAge() {
-        return Age;
+    public int getage() {
+        return age;
     }
 
     public void setAge(int age) {
@@ -36,7 +36,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Name = " + Name + "] Surname = " + Surname + "] Age = "+ Age + "]";
+        return "Name = " + name + "] Surname = " + surname + "] Age = "+ Age + "]";
     }
 }
 
